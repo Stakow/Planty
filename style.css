@@ -9,5 +9,88 @@ Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custo
 Version: 3.5.5.1714995475
 Updated: 2024-05-06 13:37:55
 
-*/
+/*Votre diagonale d'affichage est : 22.9" (58.2 cm)*/
+/*Dimensions de l'écran, largeur x hauteur : 20" x 11.3" (50.8 cm x 28.7 cm)*/
+.econ-inner {
+    margin : 0;
+}
 
+p {
+    margin : 0;
+}
+
+/* header */
+.elementor-element.elementor-element-68b3c61 {
+    padding: 0px;
+}
+
+.buttonheader { /* comprendre pourquoi ça ne fontionne pas */
+    width: 100% !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.Elementadmin:hover {
+        transform: translate(2px, -2px); 
+        font-weight: 600;
+    }
+
+/* page accueil */
+
+.elementor-24 .elementor-element.elementor-element-6bd60d8 {
+
+   border-radius: 0% 0% 10% 10%;
+   border-bottom: 3px solid #E0B9B4;
+    
+    
+} 
+.elementor-24 .elementor-element.elementor-element-382a480 {
+
+    border-radius: 0% 0% 30% 30%;
+    border-bottom: 3px solid #E0B9B4;
+}
+
+/* page contact */
+
+.firstcontenair {
+
+   border-radius: 0% 0% 10% 10%;
+   border-bottom: 3px solid #E0B9B4;
+}
+
+.centretext {
+    padding-left: 130px;
+}
+.shorttext{
+    padding-left: 45px;
+}
+    
+
+/* formulaire page nous renconter */
+
+.wpcf7-text {
+    background-color: #ffffff !important;
+    border-radius: 7px !important;
+    height: 50px !important;
+}
+.wpcf7-textarea {
+    background-color: #ffffff !important;
+    border-radius: 7px !important;
+
+}
+
+
+.wpcf7-submit {
+    background-color : #E0B9B4 !important;
+    margin-top: 20px !important;
+    border-radius: 5px !important;
+    height: 50px !important;
+    width: 198px !important;
+    margin-left: 50px !important;
+}
+
+
+.wpcf7-form.init p {
+    padding-top: 20px !important;
+    z-index: 2 !important;
+}
