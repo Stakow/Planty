@@ -12,11 +12,14 @@ Updated: 2024-05-06 13:37:55
 /*Votre diagonale d'affichage est : 22.9" (58.2 cm)*/
 /*Dimensions de l'écran, largeur x hauteur : 20" x 11.3" (50.8 cm x 28.7 cm)*/
 .econ-inner {
-    margin : 0;
+    margin : 0px;
+}
+.e-con-inner {
+    padding: 0px !important;
 }
 
 p {
-    margin : 0;
+    margin : 0px;
 }
 
 /* header */
@@ -30,10 +33,16 @@ p {
     margin: 0;
     padding: 0;
 }
+
 .Elementadmin:hover {
         transform: translate(2px, -2px); 
-        font-weight: 600;
-    }
+        font-weight: 700px !important;
+}
+
+.Elementrencontrer:hover {
+        transform: translate(2px, -2px); 
+        font-weight: 700px;
+}
 
 /* page accueil */
 
@@ -62,7 +71,7 @@ p {
     padding-left: 130px;
 }
 .shorttext{
-    padding-left: 45px;
+    padding-left: 30px;
 }
     
 
@@ -94,3 +103,141 @@ p {
     padding-top: 20px !important;
     z-index: 2 !important;
 }
+
+/* page précommande */ 
+
+.contenairbutton {
+    display: flex;
+    width: 1140px;
+    height: 200px;
+    gap: 0px;
+    background-color: #3B8E46;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+}
+.input-group {
+    display: flex;
+    width: 240px;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.quantity-display {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 3px 0px 0px 3px;
+    padding: 20px;
+    border: 1px solid #ffffff;
+}
+
+.plusminus {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    display: inline;
+}
+.input-group .btn.minus {
+    background-color: #DC9F96;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border-color: #DC9F96;
+}
+
+.input-group .btn.plus {
+    background-color: #DC9F96;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ffffff !important;
+    border-radius: 3px;
+    border-color: #DC9F96;
+}
+
+.designok {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border :1px #E0B9B4;
+    background-color: #E0B9B4;
+    border-radius: 3px;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+/* formulaire page précommande */
+
+.allform {
+    width: 1140px;
+    height: 550px;
+    display: flex;
+    border-top: 1px solid #ffffff;
+    padding-top : 50px
+
+}
+
+.firstform {
+    margin-right: 50px;
+    margin-left: 100px;
+    padding-right: 150px;
+    border-right: 1px solid #ffffff;
+    
+}
+.secondform {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.elementor-kit-35 h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 36px;
+}
+
+.firstform p {
+    color:#ffffff;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    
+}
+
+.secondform p {
+    color:#ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.submitcommander {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+
+
+
+
+
