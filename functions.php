@@ -23,56 +23,17 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
-//*commande*//
-// Démarrer la session avant tout en utilisant le hook 'init'
-function start_session() {
-    if (!session_id()) {
-        session_start();
-    }
-}
-add_action('init', 'start_session', 1);
 
-// Fonction pour afficher la quantité actuelle
-function display_quantity($fruit) {
-    return isset($_SESSION[$fruit]) ? $_SESSION[$fruit] : 0;
-}
-
-// Shortcodes pour afficher la quantité
-add_shortcode('fraisedisplay', function() {
-    return display_quantity('fraise');
-});
-
-add_shortcode('pamplemoussedisplay', function() {
-    return display_quantity('pamplemousse');
-});
-
-add_shortcode('framboisedisplay', function() {
-    return display_quantity('framboise');
-});
-
-add_shortcode('citrondisplay', function() {
-    return display_quantity('citron');
-});
-
-// Fonction pour gérer l'action du formulaire
-function handle_fruit_action() {
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $fruits = ['fraise', 'pamplemousse', 'framboise', 'citron'];
-        foreach ($fruits as $fruit) {
-            if (isset($_POST[$fruit . '-action'])) {
-                $action = $_POST[$fruit . '-action'];
-                if (!isset($_SESSION[$fruit])) {
-                    $_SESSION[$fruit] = 0;
-                }
-                if ($action == 'increase') {
-                    $_SESSION[$fruit]++;
-                } elseif ($action == 'decrease' && $_SESSION[$fruit] > 0) {
-                    $_SESSION[$fruit]--;
-                }
-                break; // Un seul fruit traité à la fois
-            }
+function add_admin_item_to_nav_menu($items, $args) {
+    if ($args->menu == 40) {
+        if (is_user_logged_in() && current_user_can('administrator')) {
+            $items .= '<li><a href="http://planty.local/wp-admin/edit.php">Admin</a></li>' . admin_url() . '">Admin</a></li>';
         }
     }
+    return $items;
 }
-add_action('init', 'handle_fruit_action');
+
+add_filter('wp_nav_menu_items', 'add_admin_item_to_nav_menu', 10, 2);
+
+
 

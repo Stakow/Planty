@@ -9,8 +9,7 @@ Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custo
 Version: 3.5.5.1714995475
 Updated: 2024-05-06 13:37:55
 
-/*Votre diagonale d'affichage est : 22.9" (58.2 cm)*/
-/*Dimensions de l'écran, largeur x hauteur : 20" x 11.3" (50.8 cm x 28.7 cm)*/
+*/
 .econ-inner {
     margin : 0px;
 }
@@ -27,44 +26,143 @@ p {
     padding: 0px;
 }
 
-.buttonheader { /* comprendre pourquoi ça ne fontionne pas */
-    width: 100% !important;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+
+.elementor-40 .elementor-element.elementor-element-99ecd54 .elementor-button {
+    width: 100%;
 }
 
 .Elementadmin:hover {
         transform: translate(2px, -2px); 
-        font-weight: 700px !important;
+        font-weight: 700 !important;
 }
 
 .Elementrencontrer:hover {
         transform: translate(2px, -2px); 
-        font-weight: 700px;
+        font-weight: 700;
 }
 
 /* page accueil */
 
+.imgcontenair {
+    width: auto;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elementor-24 .elementor-element.elementor-element-7d47983 {
+    border-radius: 0% 0% 10% 10%;
+}
+.premiereimg {
+    position: absolute;
+    z-index: 1;
+    top: 170px;
+    left: 610px;
+
+}
+.deuxiemeimg {
+    position:relative;
+    z-index: 2;
+    width: auto;
+    height: 950px !important;
+
+}
+.troisiemeimg {
+    position: absolute;
+    z-index: 1;
+    top: 170px;
+    right: 570px;
+}
 .elementor-24 .elementor-element.elementor-element-6bd60d8 {
 
    border-radius: 0% 0% 10% 10%;
-   border-bottom: 3px solid #E0B9B4;
-    
-    
+      
 } 
 .elementor-24 .elementor-element.elementor-element-382a480 {
 
     border-radius: 0% 0% 30% 30%;
-    border-bottom: 3px solid #E0B9B4;
 }
+
+.lastcontenair {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.firstgroup {
+    width: 33%;
+    height: 250px;
+    display: flex;
+}
+.imgfatiha {
+    width: 200px;
+    margin-left: 100px;
+    height: 250px;
+       
+}
+.grpfatiha {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+
+.secondgroup {
+    width: 33%;
+    height: 250px;
+    display: flex;
+}
+.imgvero {
+    width: 200px;
+    margin-left: 50px;
+    height: 250px;
+       
+}
+.grpvero {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+
+.thirdgroup {
+    width: 33%;
+    height: 250px;
+    display: flex;
+}
+.imgmarc {
+    width: 200px;
+    height: 250px;
+    
+}
+.grpmarc {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 50px;
+    
+}
+
+
 
 /* page contact */
 
 .firstcontenair {
 
    border-radius: 0% 0% 10% 10%;
-   border-bottom: 3px solid #E0B9B4;
 }
 
 .centretext {
@@ -81,13 +179,15 @@ p {
     background-color: #ffffff !important;
     border-radius: 7px !important;
     height: 50px !important;
+    margin-top: 10px !important;
+    
+
 }
 .wpcf7-textarea {
     background-color: #ffffff !important;
     border-radius: 7px !important;
-
-}
-
+    margin-top: 10px !important;
+    }
 
 .wpcf7-submit {
     background-color : #E0B9B4 !important;
@@ -98,16 +198,50 @@ p {
     margin-left: 50px !important;
 }
 
+.submitmodif { 
+    display: flex;
+    justify-content: center;
+}
+
+.textform p {
+    color: #000000;
+    margin-top: 20px !important;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.nousrencontrer {
+    display: flex;
+    justify-content: center;
+}
+
+.imgnousrencontrer {
+    position: absolute;
+    top: 520px;
+    right: 220px;
+    z-index: 1;
+    }
+.wpcf7 .js {
+    z-index: 2;
+}
 
 .wpcf7-form.init p {
     padding-top: 20px !important;
-    z-index: 2 !important;
+}
+
+.textform {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
 }
 
 /* page précommande */ 
 
 .contenairbutton {
     display: flex;
+    justify-content: space-between;
     width: 1140px;
     height: 200px;
     gap: 0px;
@@ -122,27 +256,33 @@ p {
     width: 240px;
     height: 200px;
     margin-left: 30px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
-.quantity-display {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 60px;
-    font-size: 20px;
+form input[type=number] {
+    max-width: 150px;
+    width: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    text-align: center;
+    padding: 10px !important;
     border-radius: 3px 0px 0px 3px;
-    padding: 20px;
     border: 1px solid #ffffff;
+    background-color: #ffffff !important;
+    font-size: 20px !important;
 }
+
+
+.no-spin::-webkit-inner-spin-button,
+        .no-spin::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+}
+
 
 .plusminus {
     display: flex;
     flex-direction: column;
-    white-space: nowrap;
-    display: inline;
 }
 .input-group .btn.minus {
     background-color: #DC9F96;
@@ -168,7 +308,7 @@ p {
 }
 
 .designok {
-    width: 100px;
+    width: 90px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -215,7 +355,7 @@ p {
 
 .firstform p {
     color:#ffffff;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     padding-bottom: 10px;
@@ -240,4 +380,339 @@ p {
 
 
 
+/***** RESPONSIVE *****/
 
+/* Styles pour les tablettes (résolution de 768px à 1024px) */
+/* Nous rencontrer */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .elementor-26 .elementor-element.elementor-element-c55ae70 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+    }
+    .elementor-26 .elementor-element.elementor-element-cc437d1 {
+        margin-left: 0px;
+    }
+    .elementor-26 .elementor-element.elementor-element-eeed3a9 {
+        margin-left: 0px;
+    }
+    .elementor-26 .elementor-element.elementor-element-e4b13db > .elementor-widget-container {
+        padding: 0px;
+    }
+    .shorttext {
+        padding: 0px;
+    }
+    .centretext {
+        padding: 0px;
+    }
+
+    /*Commander*/
+
+    .contenairbutton {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .elementor-element-bd8c9c5 {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementor-element-b4201a7 {
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .elementor-element-ee24a45 {
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .elementor-element-0cdc9cf {
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .elementor-element-d9d7f39 {
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* ACCUEIL */
+    .premiereimg {
+        position: absolute;
+        z-index: 1;
+        top: 170px;
+        left: 60px;
+    
+    }
+    .deuxiemeimg {
+        position:relative;
+        z-index: 2;
+        width: auto;
+        height: 500px !important;
+    
+    }
+    .troisiemeimg {
+        position: absolute;
+        z-index: 1;
+        top: 170px;
+        right: 50px;
+    }
+
+
+    .lastcontenair {
+        margin: 0px;
+    }
+    .imgfatiha {
+        margin: 0px;
+    }
+    .imgvero {
+        margin: 0px;
+    }
+    .imgmarc {
+        margin: 0px;
+    }
+    .grpmarc {
+        margin-right: 0px;
+    }
+ 
+     /* HEADER */
+
+
+     .elementor-element-97fd3e2 {
+        display: flex;
+        text-align: center;
+    }
+    .elementor-element-d1d0708 {
+        margin: 0px;
+        text-align: center;
+    }
+    .elementor-40 .elementor-element.elementor-element-99ecd54 .elementor-button {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+ 
+}
+
+/* Styles pour les smartphones (résolution de 320px à 767px) */
+/* Nous rencontrer */
+@media only screen and (max-width: 767px) {
+    .elementor-26 .elementor-element.elementor-element-c55ae70 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+    }
+    .elementor-26 .elementor-element.elementor-element-cc437d1 {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .elementor-26 .elementor-element.elementor-element-eeed3a9 {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .elementor-26 .elementor-element.elementor-element-e4b13db > .elementor-widget-container {
+        padding: 0px;
+    }
+    .shorttext {
+        padding: 0px;
+    }
+    .centretext {
+        padding: 0px;
+    }
+    
+    /*Commander*/
+
+    .contenairbutton {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elementor-element-bd8c9c5 {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementor-element-b4201a7 {
+        width: 200px;
+        height: 200px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .elementor-element-ee24a45 {
+        width: 200px;
+        height: 200px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .elementor-element-0cdc9cf {
+        width: 200px;
+        height: 200px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .elementor-element-d9d7f39 {
+        width: 200px;
+        height: 200px;
+        padding: 0px;
+        margin: 0px;    
+    }
+    
+    .e-con.e-flex>.e-con-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    .allform {
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .firstform {
+        margin-left: 20px;
+        border-right: 0px !important;
+        border-bottom: 1px solid #ffffff;
+        padding : 0px;
+    }
+
+    .secondform {
+        margin-left: 20px;
+        padding: 0px;
+    }
+
+    .submitcommander {
+        margin: 0px;
+    }
+
+    /* ACCUEIL */
+    .elementor-kit-35 h1 {
+        font-size: 24px;
+    }
+
+    .elementor-element-7d47983 {
+        width: 100%;
+        height: 300px !important;
+    }
+    
+    .elementor-element-290670f {
+        width: 100%;
+        height: 300px;
+    }
+
+    .premiereimg {
+        left: 20px;
+    }
+    .deuxiemeimg {
+        object-fit: cover;
+        margin-bottom: 50px;
+    }
+    .troisiemeimg {
+        left: 20px;
+    }
+        
+
+    .elementor-element-e9b7758 {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .elementor-element-328680c {
+        margin: 0px;
+    }
+
+    .elementor-element-b595f71 {
+        margin: 0px;
+    }
+    
+    .lastcontenair {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 900px;
+        flex-wrap: nowrap;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+    
+    .firstgroup {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+    }
+    .secondgroup {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+    }
+    .thirdgroup {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    .imgfatiha {
+        margin: 0px;
+    }
+    .imgvero {
+        margin: 0px;
+    }
+    .imgmarc {
+        margin: 0px;
+    }
+    .grpmarc {
+        margin-right: 0px;
+    }
+
+    .elementor-24 .elementor-element.elementor-element-617d640 {
+        height: 100px;
+    }
+    .elementor-24 .elementor-element.elementor-element-617d640 img {
+        height: 100px;
+        width: auto;
+    }
+    /* HEADER */
+
+
+    .elementor-element-97fd3e2 {
+        display: flex;
+        text-align: center;
+    }
+    .elementor-element-d1d0708 {
+        margin: 0px;
+        text-align: center;
+    }
+
+}
