@@ -22,23 +22,97 @@ p {
 }
 
 /* header */
-.elementor-element.elementor-element-68b3c61 {
-    padding: 0px;
-}
 
-
-.elementor-40 .elementor-element.elementor-element-99ecd54 .elementor-button {
+.site .clr {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    height: 80px;
 }
 
-.Elementadmin:hover {
-        transform: translate(2px, -2px); 
-        font-weight: 700 !important;
+#site-header {
+    width: 400px;
 }
 
-.Elementrencontrer:hover {
-        transform: translate(2px, -2px); 
-        font-weight: 700;
+.custom-logo-link {
+    display: flex;
+    justify-content: center;
+}
+
+#planty_menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap : 0px;
+    width: auto;
+    margin-left: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 80px;
+    
+}
+
+.menu-planty_menu-container {
+    height: 80px;
+}
+
+.menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-right: 20px;
+}
+
+.menu li:hover {
+    transform: translate(2px, -2px); 
+    font-weight: 700;
+}
+
+#main {
+    display: none;
+}
+
+.flexmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.buttoncontenair {
+    display: flex;
+    width: 300px;
+    height: 80px;
+    margin-left: 50px;
+
+}
+
+.buttoncommander {
+    background-color: #DC9F96;
+    height: 80px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.buttoncommander:hover {
+    background-color:#C02E44 ;
+    color: #ffffff;
 }
 
 /* page accueil */
@@ -53,25 +127,25 @@ p {
 .elementor-24 .elementor-element.elementor-element-7d47983 {
     border-radius: 0% 0% 10% 10%;
 }
-.premiereimg {
+.firstimg {
     position: absolute;
     z-index: 1;
     top: 170px;
-    left: 610px;
+    left: 33%;
 
 }
-.deuxiemeimg {
+.secondimg {
     position:relative;
     z-index: 2;
     width: auto;
     height: 950px !important;
 
 }
-.troisiemeimg {
+.thirdimg {
     position: absolute;
     z-index: 1;
     top: 170px;
-    right: 570px;
+    right: 31%;
 }
 .elementor-24 .elementor-element.elementor-element-6bd60d8 {
 
@@ -154,6 +228,10 @@ p {
     margin-left: 30px;
     margin-right: 50px;
     
+}
+
+.elementor-button-wrapper {
+    width: 1120px;
 }
 
 
@@ -246,6 +324,7 @@ p {
     height: 200px;
     gap: 0px;
     background-color: #3B8E46;
+    margin-top: 20px;
 }
 .button-group {
     display: flex;
@@ -400,6 +479,15 @@ form input[type=number] {
     .elementor-26 .elementor-element.elementor-element-e4b13db > .elementor-widget-container {
         padding: 0px;
     }
+    .elementor-26 .elementor-element.elementor-element-f48a22d > .elementor-widget-container {
+        padding: 0px;
+        width: 300px;
+        height: 250px;
+    }
+    .elementor-26 .elementor-element.elementor-element-f48a22d img {
+        width: 200px;
+        height: 250px;
+    }
     .shorttext {
         padding: 0px;
     }
@@ -411,7 +499,7 @@ form input[type=number] {
 
     .contenairbutton {
         width: 100%;
-        height: 400px;
+        height: 200px;
         display: flex;
         padding: 0px;
         margin: 0px;
@@ -452,26 +540,39 @@ form input[type=number] {
         padding: 0px;
     }
 
+    .input-group {
+        margin-right: 0px;
+        margin-left: 2px;
+    }
+    .designok {
+        margin: 0px;
+    }
+    .firstform {
+        margin: 0px;
+    }
+    .submitcommander {
+        margin-left: 0px;
+    }
+
     /* ACCUEIL */
-    .premiereimg {
+    .firstimg {
         position: absolute;
         z-index: 1;
         top: 170px;
-        left: 60px;
+        left: 17%;
     
     }
-    .deuxiemeimg {
+    .secondimg {
         position:relative;
         z-index: 2;
         width: auto;
-        height: 500px !important;
     
     }
-    .troisiemeimg {
+    .thirdimg {
         position: absolute;
         z-index: 1;
         top: 170px;
-        right: 50px;
+        right: 15%;
     }
 
 
@@ -489,6 +590,10 @@ form input[type=number] {
     }
     .grpmarc {
         margin-right: 0px;
+    }
+
+    .elementor-button-wrapper {
+        width: 100%;
     }
  
      /* HEADER */
@@ -528,6 +633,15 @@ form input[type=number] {
     }
     .elementor-26 .elementor-element.elementor-element-e4b13db > .elementor-widget-container {
         padding: 0px;
+    }
+    .elementor-26 .elementor-element.elementor-element-f48a22d > .elementor-widget-container {
+        padding: 0px;
+        width: 300px;
+        height: 250px;  
+    }
+    .elementor-26 .elementor-element.elementor-element-f48a22d img {
+        width: 200px !important;
+        height: 250px;
     }
     .shorttext {
         padding: 0px;
@@ -626,15 +740,15 @@ form input[type=number] {
         height: 300px;
     }
 
-    .premiereimg {
-        left: 20px;
+    .firstimg {
+        left: 10%;
     }
-    .deuxiemeimg {
+    .secondimg {
         object-fit: cover;
         margin-bottom: 50px;
     }
-    .troisiemeimg {
-        left: 20px;
+    .thirdimg {
+        left: 50%;
     }
         
 
@@ -703,16 +817,29 @@ form input[type=number] {
         height: 100px;
         width: auto;
     }
+
+    .elementor-button-wrapper {
+        width: 100%;
+    }
     /* HEADER */
 
 
-    .elementor-element-97fd3e2 {
-        display: flex;
-        text-align: center;
-    }
-    .elementor-element-d1d0708 {
+    .buttoncontenair {
         margin: 0px;
-        text-align: center;
+    }
+
+    #header_menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .menu li {
+        margin:0px;
+        margin-bottom: 10px;
     }
 
 }
+
+
+

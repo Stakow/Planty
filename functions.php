@@ -23,17 +23,26 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
-
 function add_admin_item_to_nav_menu($items, $args) {
-    if ($args->menu == 40) {
-        if (is_user_logged_in() && current_user_can('administrator')) {
-            $items .= '<li><a href="http://planty.local/wp-admin/edit.php">Admin</a></li>' . admin_url() . '">Admin</a></li>';
+    if ($args->theme_location == 'topbar_menu') {
+        if (is_user_logged_in()) {
+            $items .= '<li><a href="'.get_admin_url().'">Admin</a></li>';
         }
+        
     }
     return $items;
 }
 
 add_filter('wp_nav_menu_items', 'add_admin_item_to_nav_menu', 10, 2);
+
+
+
+
+
+
+
+
+
 
 
 
