@@ -131,7 +131,7 @@ p {
     position: absolute;
     z-index: 1;
     top: 170px;
-    left: 33%;
+    left: 33% ;
 
 }
 .secondimg {
@@ -164,7 +164,7 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 100px;
+    padding-left: 150px;
 }
 
 .firstgroup {
@@ -174,7 +174,7 @@ p {
 }
 .imgfatiha {
     width: 200px;
-    margin-left: 100px;
+    margin-left: 50px;
     height: 250px;
        
 }
@@ -543,16 +543,19 @@ form input[type=number] {
     .input-group {
         margin-right: 0px;
         margin-left: 2px;
+        padding-left: 10px;
     }
     .designok {
         margin: 0px;
     }
     .firstform {
         margin: 0px;
+        padding-left: 30px;
     }
     .submitcommander {
         margin-left: 0px;
     }
+
 
     /* ACCUEIL */
     .firstimg {
@@ -578,6 +581,7 @@ form input[type=number] {
 
     .lastcontenair {
         margin: 0px;
+        padding-left: 50px;
     }
     .imgfatiha {
         margin: 0px;
@@ -611,8 +615,14 @@ form input[type=number] {
         padding-left: 50px;
         padding-right: 50px;
     }
- 
+    .menu {
+        margin-left: 50px;
+    }
+    .menu li {
+        margin-left: 10px;
+    }
 }
+
 
 /* Styles pour les smartphones (résolution de 320px à 767px) */
 /* Nous rencontrer */
@@ -707,6 +717,8 @@ form input[type=number] {
         display: flex;
         flex-direction: column;
         align-items: start;
+        justify-content: center;
+        align-items: center;
     }
 
     .firstform {
@@ -714,11 +726,13 @@ form input[type=number] {
         border-right: 0px !important;
         border-bottom: 1px solid #ffffff;
         padding : 0px;
+        padding-bottom: 20px;
     }
 
     .secondform {
         margin-left: 20px;
-        padding: 0px;
+        padding-left: 40px;
+        padding-top: 30px;
     }
 
     .submitcommander {
@@ -741,14 +755,16 @@ form input[type=number] {
     }
 
     .firstimg {
-        left: 10%;
+        left: 2%;
+        top : 160px;
     }
     .secondimg {
         object-fit: cover;
         margin-bottom: 50px;
     }
     .thirdimg {
-        left: 50%;
+        left: 52%;
+        top : 160px;
     }
         
 
@@ -776,6 +792,7 @@ form input[type=number] {
         flex-wrap: nowrap;
         margin-bottom: 50px;
         margin-left: 0px;
+        padding-left: 30px;
     }
     
     .firstgroup {
@@ -826,6 +843,7 @@ form input[type=number] {
 
     .buttoncontenair {
         margin: 0px;
+        width: 170px;
     }
 
     #header_menu {
@@ -837,6 +855,15 @@ form input[type=number] {
     .menu li {
         margin:0px;
         margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+ 
+    /*Footer*/
+
+    .elementor-element-aa6d8cb {
+        display: flex;
+        justify-content: center;
     }
 
 }
